@@ -3,16 +3,57 @@
 <head>
     <title>구렁이 승리</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('temple1.png') no-repeat center center fixed; /* Image background */
+            background-size: cover; /* Ensure the background covers the entire screen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff; /* White text color for better contrast */
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background to container for better readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 8vw;
+            color: ghostwhite; /* Red text color */
+            font-weight: bold; /* Bold text */
+        }
+
+        #reportButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: ;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #reportButton:hover {
+            background-color: #ff0000;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>구렁이 승리</h1>
-        <button id="sendSnakeVictory" onclick="sendSnakeVictory()">문자 보내기</button>
+        <button id="reportButton" onclick="sendReport()">신고</button>
     </div>
 
     <script>
-        function sendSnakeVictory() {
+        function sendReport() {
             window.location.href = "sms:01058521913?body=구렁이%20승리";
         }
     </script>
