@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('temple1.png') no-repeat center center fixed; /* Image background */
+    background-size: cover; /* Ensure the background covers the entire screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff; /* White text color for better contrast */
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background to container for better readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 8vw;
+    color: red; /* Red text color */
+    font-weight: bold; /* Bold text */
+}
+
+#reportButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4b4b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#reportButton:hover {
+    background-color: #ff0000;
+}
